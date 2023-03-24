@@ -1,0 +1,9 @@
+@media screen and (max-width: 568px) {
+    .login_paragraph {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .login_button {
+        margin: 267px 0 14px 0;
+    }
+}

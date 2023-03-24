@@ -1,0 +1,163 @@
+.moviescardlist_section {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 70px;
+}
+
+.moviescardlist_gloval_container {
+    box-sizing: border-box;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+.moviescardlist_movies_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 28px;
+    padding: 70px 0 10px 0;
+}
+
+.moviescardlist_movies_notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.movie_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #FDFDFD;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+.movie_flex_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px;
+
+}
+
+.movie_span_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.movie_paragraph_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: right;
+    color: #A0A0A0;
+    margin: 0;
+}
+
+
+.movies_image_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.movie_cover {
+    width: 100%;
+}
+
+.movie_add_button {
+    background-image: url('../../../../images/movie_add-icon.svg');
+    background-color: #EE3465;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border-radius: 30px;
+    border: none;
+    
+    width: 100px;
+    height: 29px;
+    padding: 12px 46px;
+    margin: 18px auto;
+    
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+}
+
+.movie_add_button_unsave {
+    background-color: #F9F9F9;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 11px;
+
+    text-align: center;
+
+    color: #000000;
+
+    border-radius: 30px;
+    border: none;
+    
+    width: 100px;
+    height: 29px;
+    padding: 9px 15px;
+    margin: 18px auto;
+    
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+}
+
+.movie_add_button_unsave:hover {
+    background-color: #EE3465;
+    color: #F9F9F9;
+}
+
+.movie_add_button:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 967px) {
+    .moviescardlist_section {
+        padding: 0 30px;
+    }
+    .moviescardlist_movies_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 24px;
+        padding: 70px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .moviescardlist_section {
+        padding: 0 10px;
+    }
+    .moviescardlist_movies_container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 40px 0 0 0;
+    }
+    .movie_card {
+        width: 100%;
+    }
+}
